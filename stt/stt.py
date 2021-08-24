@@ -7,7 +7,7 @@ Created on 09.08.2019.
 # import time
 
 import xlsxwriter
-import xlrd
+# import xlrd
 import pyodbc
 import openpyxl as opx
 
@@ -660,7 +660,7 @@ def populateProductsSTT(sheet_name, vr_sifra, vr_naziv):
 
 
 def readSLV(slv_file, cs_kol, cc_kol, paid_kol):
-    book = opx.Workbook()
+    # book = opx.Workbook()
     book = opx.load_workbook(slv_file, data_only=True)
     sheets = book.sheetnames
     lista_slv = []
