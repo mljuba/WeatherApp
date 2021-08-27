@@ -5,7 +5,7 @@ import time
 
 def getWeather(root):
     city = textfield.get()
-    api = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=dffe0aba72e1a275528332bb426afc54"
+    api = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid={API}"
     json_data = requests.get(api).json()
     condition = json_data['weather'][0]['main']
     temp = int(json_data['main']['temp'] - 273.15)
